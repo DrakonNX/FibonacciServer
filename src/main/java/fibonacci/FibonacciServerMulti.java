@@ -66,6 +66,8 @@ public class FibonacciServerMulti {
 				}
 			});
 			// start the thread
+			// if you used handler.run, it would run everything on the same thread and make it a blocking program
+			// must use handler.start to get concurrency
 			handler.start();
 		}
 	}

@@ -11,7 +11,7 @@ import java.net.Socket;
  * at which point it is "closed" and may not be used further.
  */
 public class FibonacciClient {
-    private static final int N = 100;
+    private static final int N = 10000;
     private Socket socket;
     private BufferedReader in;
     // Rep invariant: socket, in, out != null
